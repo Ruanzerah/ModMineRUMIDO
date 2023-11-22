@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraftforge.common.MinecraftForge;
@@ -36,5 +37,6 @@ class PickaxeExample extends ItemPickaxe {
         super(ToolMaterial.DIAMOND);
         setRegistryName("pickaxeexample");
         setUnlocalizedName("pickaxeexample");
+        setCreativeTab(CreativeTabs.COMBAT);
     }
 }
