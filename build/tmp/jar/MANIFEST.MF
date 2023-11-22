@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: ModMineRUMIDO
-Implementation-Version: 1.0
-Specification-Vendor: examplemodsareus
-Specification-Title: examplemod
-Implementation-Timestamp: 2023-11-21T21:43:34-0300
-Specification-Version: 1
-Implementation-Vendor: examplemodsareus
-
