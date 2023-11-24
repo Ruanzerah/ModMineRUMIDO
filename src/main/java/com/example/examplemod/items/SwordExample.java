@@ -5,6 +5,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -16,7 +17,6 @@ public class SwordExample extends ItemSword {
         setRegistryName("swordexample");
         setUnlocalizedName("swordexample");
         setCreativeTab(CreativeTabs.COMBAT);
-
     }
 
     @Override
@@ -26,6 +26,5 @@ public class SwordExample extends ItemSword {
         world.addWeatherEffect(new EntityLightningBolt(world, target.posX, target.posY, target.posZ, false));
         return super.hitEntity(stack, target, attacker);
     }
-
 
 }
