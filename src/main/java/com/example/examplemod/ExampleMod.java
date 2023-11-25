@@ -1,9 +1,11 @@
 package com.example.examplemod;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.item.*;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -19,7 +21,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 @Mod(modid = ExampleMod.MODID, name = ExampleMod.NAME, version = ExampleMod.VERSION)
 public class ExampleMod {
-    public static final String MODID = "rmd";
+    public static final String MODID = "examplemod";
     public static final String NAME = "RumidoModder";
     public static final String VERSION = "1.0";
 
@@ -31,6 +33,7 @@ public class ExampleMod {
     @EventHandler
     public void init(FMLInitializationEvent event) {
     }
+
 
     @SubscribeEvent
     public void registerModels(ModelRegistryEvent event){
