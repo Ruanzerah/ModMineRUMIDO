@@ -1,5 +1,4 @@
 package com.example.examplemod.items;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
@@ -18,7 +17,6 @@ public class SwordExample extends ItemSword {
         setUnlocalizedName("swordexample");
         setCreativeTab(CreativeTabs.COMBAT);
     }
-
     @Override
     @ParametersAreNonnullByDefault
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
