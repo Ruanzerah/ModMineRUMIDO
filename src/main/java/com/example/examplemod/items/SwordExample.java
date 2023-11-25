@@ -1,10 +1,10 @@
 package com.example.examplemod.items;
+import com.example.examplemod.ExampleMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -16,6 +16,7 @@ public class SwordExample extends ItemSword {
         setRegistryName("swordexample");
         setUnlocalizedName("swordexample");
         setCreativeTab(CreativeTabs.COMBAT);
+        ExampleMod.initTexturesItems.add(this);
     }
     @Override
     @ParametersAreNonnullByDefault

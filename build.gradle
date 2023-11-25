@@ -82,6 +82,7 @@ dependencies {
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
+sourceSets { main { output.resourcesDir = output.classesDir } }
 jar {
     manifest {
         attributes([
